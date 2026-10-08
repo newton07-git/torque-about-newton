@@ -364,3 +364,12 @@ tbody th { font-weight: 500; }
   .case-figure img { height: 240px; }
   .case-section p, .case-section li { font-size: 14px; }
 }
+
+/* About has its own page and stays accessible in the compact navigation. */
+.nav-links a[aria-current="page"] { color: var(--blue); }
+.about-page > .wrap { max-width: 1080px; }
+.about-story { padding-block: 40px 8px; }
+@media (max-width: 600px) {
+  .nav-links { gap: 10px; font-size: 13px; }
+  .about-story { padding-block: 28px 0; }
+}
